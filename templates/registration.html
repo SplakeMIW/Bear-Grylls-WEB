@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<link rel="stylesheet" href="{{ url_for('static', filename='registrationstyle.css') }}" type="text/css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.css') }}" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon " href="{{ url_for('static', filename='Gallery/Icon.png') }}">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+</head>
+<body>
+    <div class="main">
+
+        <form action="{{ url_for('registration') }}" class="ui-form" method="POST">
+            <h3>Регистрация</h3>
+            <div class="form-row">
+            <input type="text" id="email" required autocomplete="off">
+                <label for="email">Email</label>
+            </div>
+            <div class="form-row">
+            <input type="password" id="password" required autocomplete="off">
+                <label for="password">Пароль</label>
+            </div>
+            <p><input type="submit" value="Зарегистрироваться"></p>
+            </form>
+
+    </div>
+
+</body>
+</html>

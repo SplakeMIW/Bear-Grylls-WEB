@@ -1,0 +1,698 @@
+body{
+    background-image: url("Gallery/BG1.jpg");
+    background-size: 102%;
+    background-repeat: no-repeat;
+    min-width: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+.menuTOP *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.menuTOP a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    margin-right: 50px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 10px 10px 10px black;
+
+
+}
+.menuTOP a:hover{
+    background: white;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    box-shadow: 0 0 0 white,
+                0 0 0 white,
+                0 0 0 white,
+                0 0 0 white;
+  -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+.menuTOP a span{
+    position: absolute;
+    display: block;
+}
+.menuTOP a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.menuTOP a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: white;
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.menuTOP a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+.menuTOP a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: white;
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+
+.maintxt{
+    position: absolute;
+    display: block;
+    color: white;
+    top: 28%;
+    left: 7%;
+    width: 25%;
+    height: 30%;
+    text-shadow: 15px 15px 15px black;
+    font-size: 500%;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bold;
+}
+
+
+.menuTOP{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 75%;
+
+}
+
+.iconsBR{
+    position: absolute;
+    display: block;
+    top: -0.5%;
+    left: -1.4%;
+    width: 7%;
+    height: 4%;
+}
+
+
+.iconsBR li{
+    display: inline;
+    list-style-type: none;
+    margin: 2%;
+    padding: 0;
+    font-size: 150%;
+    box-shadow: 10px 2px 10px 0.5px black;
+
+}
+
+.iconsBR li a{
+    display: inline;
+    list-style-type: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.newbody{
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2610px;
+    background-color: #FDF5E6;
+}
+
+.description1{
+    position: absolute;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    top: 0%;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    background-color: #2A2922;
+    color: white;
+    text-align: center;
+    border-top: 5px solid white;
+
+
+
+}
+
+.Biography{
+    position: absolute;
+    display: block;
+    color: #2A2922;
+    top: 80px;
+    left: 0;
+    height: 2400px;
+    width: 100%;
+}
+
+.BiographyTopTXT{
+    position: absolute;
+    display: flex;
+    top: 30px;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    left: 2.5%;
+    background-color: #f2d69d;
+    border-radius: 15px;
+    font-size: 400%;
+    text-align: center;
+    z-index: 2;
+
+}
+
+.BiographyUnderTopTXT{
+    position: absolute;
+    display: flex;
+    top: 40px;
+    width: 75%;
+    flex-direction: column;
+    justify-content: center;
+    height: 140px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    left: 10%;
+    background-color: red;
+    border-radius: 15px;
+    font-size: 400%;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+
+}
+
+
+.triangle-l {
+    border-color: transparent #e6cb97 transparent transparent ;
+    border-style: solid;
+    border-width: 135px;
+    height: 0;
+    width: 0;
+    display: block;
+    position: absolute;
+    left: -80px;
+    top: 43px;
+    z-index: 0;
+
+    }
+.triangle-r {
+    border-color: transparent transparent transparent #e6cb97;
+    border-style: solid;
+    border-width: 135px;
+    height: 0;
+    width: 0;
+    display: block;
+    position: absolute;
+    left: 1712px;
+    top: 43px;
+    z-index: 0;
+
+    }
+
+
+
+
+.BiographyMiddleTXT{
+    position: absolute;
+    display: block;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    width: 80%;
+    background-color: #f7e7c8;
+    height: 2250px;
+    left: 10%;
+    border-radius: 15px;
+
+
+
+}
+
+.BiographyFirstTXT{
+    position: absolute;
+    display: block;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    color: #2A2922;
+    padding: 1%;
+    top: 220px;
+    height: auto;
+    width: 80%;
+    background-color: #f2d79d;
+    left: 2.5%;
+    border-radius: 15px;
+
+}
+
+.BiographyFirstTXT b{
+    font-size: x-large;
+    border-bottom: 3px  solid #2A2922;
+}
+
+.BGFORBiographyFirstTXT{
+    position: absolute;
+    display: block;
+    background-image: url("Gallery/BG2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 220px;
+    width: 12%;
+    border-radius: 15px;
+    height: 120px;
+    left: 86%;
+
+
+}
+
+.BiographySecondTXT{
+    position: absolute;
+    display: block;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    color: #2A2922;
+    padding:1%;
+    top: 425px;
+    height: auto;
+    width: 80%;
+    left: 2.5%;
+    background-color: #f2d79d;
+    border-radius: 15px;
+
+}
+
+.BiographySecondTXT b{
+    font-size: x-large;
+    border-bottom: 3px  solid #2A2922;
+}
+
+.BGFORBiographySecondTXT{
+    position: absolute;
+    display: block;
+    background-image: url("Gallery/BGkid.jpg");
+    background-size: 126%;
+    background-position-x: -35px;
+    background-repeat: no-repeat;
+    top: 425px;
+    width: 12%;
+    border-radius: 15px;
+    height: 228px;
+    left: 86%;
+
+}
+
+.BiographyThirdTXT{
+    position: absolute;
+    display: block;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    color: #2A2922;
+    padding:1%;
+    top: 795px;
+    height: auto;
+    width: 80%;
+    left: 2.5%;
+    background-color: #f2d79d;
+    border-radius: 15px;
+
+}
+
+.BiographyThirdTXT b{
+    font-size: x-large;
+    border-bottom: 3px  solid #2A2922;
+}
+
+.BGFORBiographyThirdTXT{
+    position: absolute;
+    display: block;
+    background-image: url("Gallery/BGarmy.jpg");
+    background-size: 107%;
+    background-repeat: no-repeat;
+    top: 795px;
+    width: 12%;
+    border-radius: 15px;
+    height: 192px;
+    left: 86%;
+
+}
+
+.BiographyFourthTXT{
+    position: absolute;
+    display: block;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    color: #2A2922;
+    padding:1%;
+    top: 1095px;
+    height: auto;
+    width: 80%;
+    left: 2.5%;
+    background-color: #f2d79d;
+    border-radius: 15px;
+}
+
+.BiographyFourthTXT b{
+    font-size: x-large;
+    border-bottom: 3px  solid #2A2922;
+}
+
+
+
+.BGFORBiographyFourthTXT{
+    position: absolute;
+    display: block;
+    background-image: url("Gallery/BGFamily1.jpg");
+    background-size: 107%;
+    background-repeat: no-repeat;
+    top: 1095px;
+    width: 12%;
+    border-radius: 15px;
+    height: 192px;
+    left: 86%;
+
+}
+
+.BGFORBiographyFourth2TXT{
+    position: absolute;
+    display: block;
+    background-image: url("Gallery/BGFamily2.jpg");
+    background-size: 150%;
+    background-position-x: -55px;
+    background-repeat: no-repeat;
+    top: 1315px;
+    width: 12%;
+    border-radius: 15px;
+    height: 167px;
+    left: 86%;
+
+}
+
+
+.BiographyFifthTXT{
+    position: absolute;
+    display: block;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    color: #2A2922;
+    padding:1%;
+    top: 1825px;
+    height: auto;
+    width: 80%;
+    left: 2.5%;
+    background-color: #f2d79d;
+    border-radius: 15px;
+}
+
+.BiographyFifthTXT b{
+    font-size: x-large;
+    border-bottom: 3px  solid #2A2922;
+}
+
+
+
+.BGFORBiographyFifthTXT{
+    position: absolute;
+    display: block;
+    background-image: url("Gallery/BGLast.jpg");
+    background-size: 150%;
+    background-repeat: no-repeat;
+    top: 1825px;
+    width: 12%;
+    border-radius: 15px;
+    height: 192px;
+    left: 86%;
+
+}
+
+.footer{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 20px;
+    top: 2505px;
+    background-color: #f7e7c8;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 100%;
+
+}
+
+/*
+#flipper {
+  color:#999;
+  text-transform: uppercase;
+  font-size:36px;
+  font-weight:bold;
+  padding-top:200px;
+  position:fixed;
+  width:100%;
+  bottom:45%;
+  display:block;
+  margin: 0;
+  text-align: center;
+}
+
+
+#flipperbox {
+  height:50px;
+  overflow:hidden;
+}
+
+#flipperbox > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flipperbox div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flipperbox div div {
+
+}
+#flipperbox div:first-child div {
+
+}
+#flipperbox div:last-child div {
+
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+.flipperbox {
+  position:fixed;
+  width:100%;
+  bottom:30px;
+  font-size:12px;
+  color:#999;
+  margin-top:200px;
+}
+
+
+*/
+
+
+
+/*
+.imagescene *{
+    margin: 0;
+    padding: 0;
+}
+
+.imagescene{
+    position: absolute;
+    display: block;
+    top: 4%;
+    left: 0;
+    height: 60%;
+    width: 100%;
+    background-size: 40%;
+    margin: 0;
+    padding: 0;
+    background-color: #3b3b3b;
+}
+
+
+.imagesliderbox{
+
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 25%;
+    height: 100%;
+    width: 50%;
+}
+*/
+/*
+.slider{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+
+}
+
+.sliderimg {
+    position: relative;
+    width: 500%;
+    animation: 50s slider-ani infinite;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.sliderimg  figure{
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    position: inherit;
+    left: -1%;
+    margin-top: 0;
+    margin-left: -5%;
+}
+
+.sliderimg  img{
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+.sliderimg  img:hover{
+    filter: grayscale(0%);
+}
+
+.sliderimg  figure figcaption{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes slider-ani{
+0%{
+    left: 30%;
+}
+
+12.5%{
+    left: 30%;
+}
+
+25%{
+    left: -70.8%;
+}
+
+37.5%{
+    left: -171.2%;
+}
+
+50%{
+    left: -279.8%;
+}
+
+62.5%{
+    left: -279.8%;
+}
+
+75%{
+    left: -171.2%;
+}
+
+87.5%{
+    left: -70.8%;
+}
+
+100%{
+    left: 30%;
+}
+
+}
+
+*/

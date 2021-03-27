@@ -1,0 +1,90 @@
+* {
+   box-sizing: border-box;
+}
+body {
+   background-image: url("Gallery/BGMountains.jpg");
+   background-repeat: no-repeat;
+   background-size: 100%;
+   font-family: 'Raleway', sans-serif;
+}
+.ui-form {
+   position: absolute;
+   display: block;
+   max-width: 350px;
+   padding: 80px 30px 30px;
+   margin: 50px auto 30px;
+   background: white;
+   border-top: 5px solid #2A2922;
+   top: 20%;
+   left: 40%;
+   width: 20%;
+}
+.ui-form h3 {
+   position: relative;
+   z-index: 5;
+   margin: 0 0 60px;
+   text-align: center;
+   color: #2A2922;
+   font-size: 30px;
+   font-weight: normal;
+}
+.form-row {
+   position: relative;
+   margin-bottom: 40px;
+}
+.form-row input {
+   display: block;
+   width: 100%;
+   padding: 0 10px;
+   line-height: 40px;
+   background: none;
+   border-width: 0;
+   border-bottom: 2px solid #2A2922;
+   transition: all 0.2s ease;
+}
+.form-row label {
+   position: absolute;
+   left: 13px;
+   color: #9d959d;
+   font-size: 20px;
+   font-weight: 300;
+   transform: translateY(-35px);
+   transition: all 0.2s ease;
+}
+.form-row input:focus {
+   outline: 0;
+   border-color: #e8b341;
+}
+.form-row input:focus+label, .form-row input:valid+label {
+   transform: translateY(-60px);
+   margin-left: -14px;
+   font-size: 14px;
+   font-weight: 400;
+   outline: 0;
+   border-color: #e8b341;
+   color: #e8b341;
+}
+.ui-form input[type="submit"] {
+   width: 100%;
+   padding: 0;
+   line-height: 42px;
+   background: #2A2922;
+   border-width: 0;
+   color: white;
+   font-size: 20px;
+}
+
+.ui-form input[type="submit"]:hover {
+   width: 100%;
+   padding: 0;
+   line-height: 42px;
+   background: #5e5d4d;
+   border-width: 0;
+   color: white;
+   font-size: 20px;
+}
+
+.ui-form p {
+   margin: 0;
+   padding-top: 10px;
+}
