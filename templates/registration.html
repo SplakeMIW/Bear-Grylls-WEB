@@ -14,14 +14,23 @@
     <div class="main">
 
         <form action="{{ url_for('registration') }}" class="ui-form" method="POST">
+            {{ form.csrf_token }}
             <h3>Регистрация</h3>
             <div class="form-row">
-            <input type="text" id="email" required autocomplete="off">
-                <label for="email">Email</label>
+                {{ form.email(class_='form-control') }}
+                <label for="email">{{ form.email.label }}</label>
             </div>
             <div class="form-row">
-            <input type="password" id="password" required autocomplete="off">
-                <label for="password">Пароль</label>
+                {{ form.nickname(class_='form-control') }}
+                <label for="email">{{ form.nickname.label }}</label>
+            </div>
+            <div class="form-row">
+                {{ form.password(class_='form-control') }}
+                <label for="password">{{ form.password.label }}</label>
+            </div>
+            <div class="form-row">
+                {{ form.confirmation(class_='form-control') }}
+                <label for="confirmation">{{ form.confirmation.label }}</label>
             </div>
             <p><input type="submit" value="Зарегистрироваться"></p>
             </form>

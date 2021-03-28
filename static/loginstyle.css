@@ -30,7 +30,7 @@ body {
 }
 .form-row {
    position: relative;
-   margin-bottom: 40px;
+   margin-bottom: 20px;
 }
 .form-row input {
    display: block;
@@ -43,14 +43,16 @@ body {
    transition: all 0.2s ease;
 }
 .form-row label {
-   position: absolute;
+   position: relative;
+   top: -16px;
    left: 13px;
    color: #9d959d;
    font-size: 20px;
    font-weight: 300;
-   transform: translateY(-35px);
+   transform: translateX(-35px);
    transition: all 0.2s ease;
 }
+
 .form-row input:focus {
    outline: 0;
    border-color: #e8b341;
@@ -63,6 +65,7 @@ body {
    outline: 0;
    border-color: #e8b341;
    color: #e8b341;
+   z-index: -1;
 }
 .ui-form input[type="submit"] {
    width: 100%;

@@ -17,14 +17,12 @@
             {{ form.csrf_token }}
             <h3>Вход</h3>
             <div class="form-row">
-            <input type="text" id="email" required autocomplete="off">
-                <label for="email">{{ form.email.label }}</label>
                 {{ form.email(class_='form-control') }}
+                <label for="email">{{ form.email.label }}</label>
             </div>
             <div class="form-row">
-            <input type="password" id="password" required autocomplete="off">
-                <label for="password">{{ form.password.label }}</label>
                 {{ form.password(class_='form-control') }}
+                <label for="password">{{ form.password.label }}</label>
             </div>
             <p><input type="submit" value="Войти"></p>
             </form>

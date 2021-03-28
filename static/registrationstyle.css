@@ -22,7 +22,7 @@ body {
 .ui-form h3 {
    position: relative;
    z-index: 5;
-   margin: 0 0 60px;
+   margin: 0 0 40px;
    text-align: center;
    color: #2A2922;
    font-size: 30px;
@@ -30,7 +30,7 @@ body {
 }
 .form-row {
    position: relative;
-   margin-bottom: 40px;
+   margin-bottom: 10px;
 }
 .form-row input {
    display: block;
@@ -43,7 +43,8 @@ body {
    transition: all 0.2s ease;
 }
 .form-row label {
-   position: absolute;
+   position: relative;
+   top: -16px;
    left: 13px;
    color: #9d959d;
    font-size: 20px;
@@ -63,6 +64,7 @@ body {
    outline: 0;
    border-color: #e8b341;
    color: #e8b341;
+   opacity: 0;
 }
 .ui-form input[type="submit"] {
    width: 100%;
