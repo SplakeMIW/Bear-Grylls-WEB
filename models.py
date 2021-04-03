@@ -29,5 +29,4 @@ class Review(db.Model):
     rating = db.Column(db.Integer, db.CheckConstraint('rating BETWEEN 1 AND 5'), nullable=False)
     body = db.Column(db.Text, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
-
     user = db.relationship('User', backref=db.backref('reviews'), lazy=True)

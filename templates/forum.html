@@ -1,29 +1,97 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-<link rel="stylesheet" href="{{ url_for('static', filename='forumstyle.css') }}" type="text/css">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='forumstyle.css') }}">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.css') }}" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon " href="{{ url_for('static', filename='Gallery/Icon.png') }}">
 <head>
-    <meta charset="UTF-8">
-    <title>Forum</title>
+	<title>Forum</title>
+
 </head>
 <body>
 
-    <div class="mainbody">
-        <div class="mainbodytop">
-            Forum
+	 <div class="top-glider">
+         <div class="top-glider-border"></div>
+
+        <div class="box">
+          <div class="container-1">
+              <span class="icon"><i class="fa fa-search"></i></span>
+              <input type="search" id="search" placeholder="Поиск..." />
+          </div>
         </div>
 
-        <div class="themesbody">
+        <div class="nav-bar">
+            <ul class="nav-bar__list nav-bar-link">
+                <li class="nav-bar__group"><a href="#" class="nav-bar__link"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                <li class="nav-bar__group"><a href="#" class="nav-bar__link"><i class="fa fa-briefcase" aria-hidden="true"></i></a></li>
+                <li class="nav-bar__group"><a href="#" class="nav-bar__link"><i class="fa fa-question-circle" aria-hidden="true"></i></a></li>
+                <li class="nav-bar__group"><a href="#" class="nav-bar__link"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+			</ul>
+        </div>
+
+	 	<a href="{{ url_for('forum') }}">
+	 		<div class="logo">
+	 			
+	 		</div>
+	 	</a>
+
+    </div>
+
+    <div class="main">
+
+        <div class="left-menu">
+
+        	<a href="{{ url_for('forum') }}">
+        		<div class="homepage">
+        			<p><b>Главная</b></p>
+        		</div>
+        	</a>
+        	
+        	<a href="{{ url_for('forum') }}">
+        		<div class="users">
+        			<p><b>Участники</b></p>
+        		</div>
+        	</a>		
 
         </div>
 
-        <div class="leftmenu">
+    <div class="themeplace">
+
+        <div class="top-theme">
+        		<p>Вопросы и Темы</p>
+
+        	<div class="themebutton">
+        		<a class="btn" href="#">Создать тему</a>
+        	</div>
+
+        	<div class="page">
+
+					    <ul class="menu__list r-list">
+					      <li class="menu__group"><a href="#" class="menu__link r-link text-underlined">Интересные</a></li>
+					      <li class="menu__group"><a href="#" class="menu__link r-link text-underlined">Популярные</a></li>
+					      <li class="menu__group"><a href="#" class="menu__link r-link text-underlined">За неделю</a></li>
+					      <li class="menu__group"><a href="#" class="menu__link r-link text-underlined">За месяц</a></li>
+					    </ul>
+
+	        		</div>
+
+        	</div>
 
         </div>
+
+     <div class="right-menu">
+
+         <div class="news">
+               <h3> Новостей нет,но вы держитесь!</h3>
+             <div class="news-top">
+                 <p><b>Новости</b></p>
+
+             </div>
+         </div>
+
+     </div>
 
     </div>
 

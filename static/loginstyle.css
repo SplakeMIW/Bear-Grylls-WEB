@@ -10,11 +10,11 @@ body {
 .ui-form {
    position: absolute;
    display: block;
-   max-width: 350px;
    padding: 80px 30px 30px;
    margin: 50px auto 30px;
    background: white;
    border-top: 5px solid #2A2922;
+   height: 54%;
    top: 20%;
    left: 40%;
    width: 20%;
@@ -90,4 +90,81 @@ body {
 .ui-form p {
    margin: 0;
    padding-top: 10px;
+}
+
+.gotoregistration {
+   display: block;
+   position: absolute;
+   left: 20%;
+   width: 60%;
+   height: 30%;
+   padding-top: 5%;
+   margin-top: 5%;
+
+
+}
+
+div.gotoregistration h3 {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    font-size: 150%;
+
+}
+
+
+div.gotoregistration p{
+
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    top: 35%;
+    font-size: 120%;
+   text-decoration: none;
+   color: #2A2922;
+}
+
+.text-underlined{
+  position: relative;
+  overflow: hidden;
+  left: 155%;
+  top: 220%;
+
+  will-change: color;
+  transition: color .25s ease-out;
+}
+
+.text-underlined::before,
+.text-underlined::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: var(--textUnderlinedLineColor, currentColor);
+
+  will-change: width;
+  transition: width .1s ease-out;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.text-underlined::before{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text-underlined::after{
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.text-underlined:hover::before,
+.text-underlined:hover::after{
+  width: 100%;
+  transition-duration: .2s;
 }

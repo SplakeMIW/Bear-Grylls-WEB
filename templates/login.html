@@ -25,7 +25,17 @@
                 <label for="password">{{ form.password.label }}</label>
             </div>
             <p><input type="submit" value="Войти"></p>
+
+            <div class="gotoregistration">
+                <h3>или</h3>
+                <a href="{{ url_for('registration') }}">
+                    <p class="text-underlined">ЗАРЕГИСТРИРОВАТЬСЯ</p>
+                </a>
+            </div>
+
             </form>
+
+
 
     </div>
 
