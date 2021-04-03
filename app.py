@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, abort, redirect, url_for
+from flask import Flask, render_template, request, abort, redirect, url_for, flash, session
 from models import db, User, Theme, Review
 from flask_migrate import Migrate
 from forms import RegistrationForm, LoginForm
@@ -30,6 +30,7 @@ def registration():
         existing_user = User.query.filter_by(email=email).first()
         if existing_user:
             abort(400)
+            flash("Такой пользователь уже существует!")
 
         nickname = form.nickname.data
         user = User(email=email, nickname=nickname)
@@ -60,6 +61,18 @@ def login():
 @login_required
 def forum():
     return render_template('forum.html')
+
+@app.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    if session.get('was_once_logged_in'):
+        # prevent flashing automatically logged out message
+        del session['was_once_logged_in']
+    return redirect('/login')
+
+
+
 
 
 

@@ -455,5 +455,13 @@ div.news-top p{
    color: #747D7A;
 }
 
-div.news h3 {}
+div.news h3 {
+	 margin-left: 5% ;
+   position: absolute;
+   top: 28%;
+   transform: translate(0, -50%) ;
+   font-size: 100%;
+   color:  #2A2922;
+
+}
 
